@@ -1,17 +1,34 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 
-.noto-serif-normal {
+.noto-serif {
   font-family: "Noto Serif", serif;
   font-optical-sizing: auto;
   font-style: normal;
   font-variation-settings:
     "wdth" 100;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  
+  font-style: normal;
+}
 /* universal */
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
+
+}
+/* shared style */
+.text{
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
 }
 .img{
     max-width: 100%;
@@ -55,4 +72,58 @@
 }
 .navbar li{
     list-style:none
+}
+/* banner */
+.banner{
+    display: flex;
+    margin: 120px auto;
+    
+}
+.banner-title{
+    font-size: 3rem;
+    font-weight: 600;
+}
+.banner-content{
+    width: 50%;
+    margin-top: 100px;
+
+}
+.fresh{
+    color:#E95A08;
+}
+.flower{
+    color: #E95A08;
+}
+.banner-description{
+    margin-top: 13px;
+
+}
+
+@media screen and (max-width: 576px) {
+    .home{
+       display: none; 
+    }
+    .shop-about{
+        display: none;
+    }
+    .banner{
+        flex-direction: column-reverse;    
+        
+        
+    }
+    
+    .container{
+        margin: 20px;
+    }
+    .banner-content{
+        margin-top: 20px;
+    } 
+    .banner-title{
+        font-size: 1.5rem;
+    }  
+    .banner-description{
+        width: 360px;
+        height: auto;
+        font-size: 0.9rem;
+    }   
 }
