@@ -22,7 +22,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-
+    overflow-x: hidden;
 }
 /* shared style */
 .text{
@@ -35,7 +35,8 @@
 }
 .container{
     max-width: 1440px;
-    margin: 0px 150px;  
+    margin: 0px auto;;
+    padding: 0px 150px;  
 }
 .btn{
   background-color: #E95A08;
@@ -52,6 +53,7 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 30px;
+    flex-wrap: wrap;
 }
 .navbar ul{
     display: flex;
@@ -92,7 +94,7 @@
 }
 .banner-content{
     width: 50%;
-    margin-top: 90px;
+    margin-top: 50px;
 
 }
 .fresh{
@@ -155,7 +157,7 @@
     }
     
     .container{
-        margin: 0px 20px;
+        padding: 0px 15px;
     }
     .banner-content{
         margin-top: 20px;
