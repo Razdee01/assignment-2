@@ -108,9 +108,7 @@
         display: none;
     }
     .banner{
-        flex-direction: column-reverse;    
-        
-        
+        flex-direction: column-reverse;        
     }
     
     .container{
@@ -118,13 +116,12 @@
     }
     .banner-content{
         margin-top: 20px;
+        width: 100%;
     } 
     .banner-title{
         font-size: 1.5rem;
     }  
     .banner-description{
-        width: 360px;
-        height: auto;
         font-size: 0.9rem;
     }   
 }
