@@ -22,7 +22,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 /* shared style */
 .text{
@@ -45,6 +45,7 @@
   font-weight: 600; 
   padding: 19px 80px; 
   border: none;
+  
 }
 /* header */
 /* navbar */
@@ -152,6 +153,11 @@
     .shop-about{
         display: none;
     }
+    .navbar ul{
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+    }
     .banner{
         flex-direction: column-reverse;        
     }
@@ -172,5 +178,12 @@
     .allcards{
         grid-template-columns: 1fr;
         width: 100%;
-    }  
+    } 
+    .btn{
+        padding:15px 40px;
+    } 
+    .navbar{
+        flex-wrap: wrap;
+        max-width: 100%;
+    }
 }
