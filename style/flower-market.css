@@ -23,6 +23,7 @@
     padding: 0px;
     box-sizing: border-box;
     
+    
 }
 /* shared style */
 .text{
@@ -43,7 +44,7 @@
   color: white;
   font-size: 1rem;
   font-weight: 600; 
-  padding: 19px 80px; 
+  padding: 19px 65px; 
   border: none;
   
 }
@@ -131,6 +132,7 @@
 }
 .card-container{
     text-align: center;
+    width: 100%;
     
    
 }
@@ -176,11 +178,13 @@
         font-size: 0.9rem;
     } 
     .allcards{
-        grid-template-columns: repeat(auto-fit,minmax(160px, 1fr));
+        grid-template-columns: repeat(2, 1fr);
+        
+        
         width: 100%;
     } 
     .btn{
-        padding:15px 40px;
+        padding: 16px 20px;
     } 
     .navbar{
         flex-wrap: wrap;
