@@ -193,6 +193,57 @@
 .latest{
     color: #E95A08;
 }
+/* grid items */
+.grid-items{
+    margin-top: 115px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 120px;
+    
+}
+
+.grid-heading{
+    margin-bottom:19px ;
+    color: white;
+    
+}
+.shop-now a{
+    color: white;
+}
+.grid-item1{
+    background-image: url(../assets/deal-bloom.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 14px;
+    padding: 50px;
+    margin-bottom: 20px;
+    
+}
+.grid-item2{
+    background-image: url(../assets/deal-ana.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 50px;
+    border-radius: 14px;
+
+    
+}
+
+.grid-item3{
+     background-image: url(../assets/deal-zabo.png);
+     background-repeat: no-repeat;
+     background-position: center;
+     padding: 50px;
+     border-radius: 22px;
+}
+.align{
+    margin-top: 50px;
+    font-size: 2.2rem;
+}
+
 
 /* responsive for mobile */
 @media screen and (max-width: 576px) {
@@ -226,8 +277,6 @@
     } 
     .allcards{
         grid-template-columns: repeat(2, 1fr);
-        
-        
         width: 100%;
     } 
     .btn{
@@ -265,5 +314,14 @@
     }
     .text{
         font-size: 0.9rem;
+    }
+    .grid-items{
+        grid-template-columns: 1fr;
+        
+    }
+    
+    .align{
+        margin-top: 0px;
+        font-size: 1.2rem;
     }
 }
