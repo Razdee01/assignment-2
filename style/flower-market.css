@@ -157,12 +157,10 @@
     
 }
 .plants-lover-img{
-    width: 50%;
-    /* position: relative; */
+    width: 50%;   
 }
 .plants-lover-content{
     width: 50%;
-    /* align-items: center; */
     justify-content: center;
     
 }
@@ -181,8 +179,19 @@
 .trusted-badge{
     position: absolute;
     width: 220px;
-    margin-left: 350px;
-    margin-top: -100px;
+    margin-left:350px ;
+    margin-top: -100px;  
+}
+.latest-deals{
+    text-align: center;
+}
+.latest-deals-title{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.latest{
+    color: #E95A08;
 }
 
 /* responsive for mobile */
@@ -230,13 +239,16 @@
     }
     .plants-lover{
         flex-direction: column;
+        gap: 18px;
         
     }
     .plants-lover-content{
         width: 100%;
+        
     }
     .plants-lover-img{
         width: 100%;
+    
     }
     .plants-lover-title{
         font-size: 1.5rem;
@@ -247,5 +259,11 @@
     }
     .trusted-badge{
         display: none;
+    }
+    .latest-deals-title{
+        font-size: 1.4rem;
+    }
+    .text{
+        font-size: 0.9rem;
     }
 }
